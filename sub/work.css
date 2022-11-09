@@ -1,0 +1,156 @@
+
+
+
+
+.backBtn{
+    position: absolute;
+    top:0;
+    left: 15px;
+    padding:20px;
+    font-size:46px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.preview-work-modal {
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    webkit-overflow-scrolling: touch;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 99999;
+    display: none;
+}
+
+.preview-container{
+    margin:50px auto;
+    background: transparent;
+    height: inherit;
+    scroll-padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 30px;
+}
+
+
+.preview-header{
+    background: #fff;
+    color: #7C8484;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 5px;
+}
+
+.preview-header .work-info-title{
+    padding: 24px 30px 24px 37px;
+}
+
+.work-title strong {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: -0.25px;
+    color: #2C3030;
+}
+
+.work-info-time{
+    font-size:15px;
+    margin-top: 6px;
+}
+
+
+.work-item-box ul li{
+    position: relative;
+}
+.work-item-box ul li:hover .img-content{
+    display: block;
+}
+.work-item-box ul li:hover .img-box::after{
+    display: block;
+}
+
+
+.work-item-box > div.on{
+    display: block !important;
+}
+
+.work-item-box > div{
+    display: none;
+}
+
+.work-item-box ul li .img-content{
+    position: absolute;
+    left:0px;
+    bottom:5px;
+    width: 100%;
+    padding:15px 20px;
+    color:#fff;
+    display: none;
+    z-index:50;
+}
+
+.work-item-box ul li .img-box{position: relative;}
+
+.work-item-box ul li .img-box::after{
+    display: none;
+    content: "";
+    position: absolute;
+    left:0;
+    z-index: 11;
+    bottom: 5px;
+    width: 100%;
+    height: 68px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    z-index:40;
+}
+
+
+.preview-body{
+    position: relative;
+    padding-bottom: 100vh;
+    overflow: hidden;
+}
+
+.preview-body iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (min-width: 576px){
+    .preview-container {
+        width:100%;
+    }    
+}
+  
+  
+  @media (min-width: 768px){
+    .preview-container {
+        width:100%;
+    }    
+  }
+  
+  @media (min-width: 992px){
+    .preview-container {
+        width:100%;
+    }    
+  }
+  
+  
+  @media (min-width: 1200px){
+    .preview-container{
+        width: 1450px;
+    }
+  }
+  

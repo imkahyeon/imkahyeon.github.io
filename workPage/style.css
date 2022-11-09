@@ -1,0 +1,26 @@
+.preview-header{
+    background: #fff;
+    color: #7C8484;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-radius: 5px;
+}
+
+.preview-header .work-info-title{
+    padding: 24px 30px 24px 37px;
+}
+.work-title strong {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: -0.25px;
+    color: #2C3030;
+}
+
+.work-info-time{
+    font-size:15px;
+    margin-top: 6px;
+}
